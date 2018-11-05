@@ -3,7 +3,7 @@ export function manageFriends(state, action){
     case 'ADD_FRIEND':
       return {friends: [...state.friends, action.friend]};
     case 'REMOVE_FRIEND':
-      // match 
+      // go through friends array, match id, remove friend, return friends array
       return 
     default:
       return state;
