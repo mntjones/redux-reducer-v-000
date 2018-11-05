@@ -3,7 +3,8 @@ export function manageFriends(state, action){
     case 'ADD_FRIEND':
       return {friends: [...state.friends, action.friend]};
     case 'REMOVE_FRIEND':
-      return state.friends.filter( el => el.id !== action.friend.id);
+      // match 
+      return 
     default:
       return state;
   }
