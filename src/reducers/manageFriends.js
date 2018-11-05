@@ -5,7 +5,7 @@ export function manageFriends(state, action){
     case 'REMOVE_FRIEND':
       // go through friends array, match id, remove friend, return friends array
       
-      return 
+      return state.friends.filter( el => el.id !== action.id );
     default:
       return state;
   }
