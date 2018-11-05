@@ -3,7 +3,6 @@ export function manageFriends(state, action){
     case 'ADD_FRIEND':
       return {friends: [...state.friends, action.friend]};
     case 'REMOVE_FRIEND':
-      debugger;
       return state.friends.filter( el => el.name !== action.friend);
     default:
       return state;
